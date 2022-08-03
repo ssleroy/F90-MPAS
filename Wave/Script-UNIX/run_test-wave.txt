@@ -1,0 +1,3 @@
+
+test-wave.sh RO_DATA/atmPhs_C006.2014.115.23.51.G19_2013.3520_nc wop_output -v=5
+

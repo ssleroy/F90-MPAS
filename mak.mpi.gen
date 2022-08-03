@@ -1,0 +1,562 @@
+#!/bin/sh
+
+#---------------------------------------------------------------
+#
+# Automatic make file generator
+#
+#---------------------------------------------------------------
+# Version |    Date     | Comment
+#---------------------------------------------------------------
+#   4.3   | 28 Aug 2004 | Updated code.
+#   4.4   | 28 Nov 2004 | More compilers.
+#   4.5   | 28 Nov 2004 | More machines.
+#   4.6   | 19 Jun 2008 | Search C files in current dir only.
+
+
+ver="4.6. 19 Jun 2008"
+
+#---------------------------------------
+# 1. SETTING COMPILER OPTIONS
+#---------------------------------------
+
+echo "OUT      = $OUT"
+echo "TYPE     = $TYPE"
+echo "MODE     = $MODE"
+echo "LIBPATHS = $LIBPATHS"
+
+
+#--- 1.1. Defining configuration for current machine
+
+machine=`uname -n`
+
+case $machine in
+
+   oflsv37 )
+
+      F90compiler="Intel"
+      f90="ifc"
+      F90Opt=""
+
+      Ccompiler="GNU"
+      Symbols="-DNAGf90Fortran"
+
+      LinkOpt=""
+
+      make="gmake"
+
+      ;;
+
+   rus4 )
+
+      F90compiler="xlf"
+      f90="xlf95"
+      F90Opt=""
+
+      Ccompiler="xlf"
+      Symbols="-DNAGf90Fortran"
+
+      LinkOpt=""
+
+      make="gmake"
+
+      ;;
+
+   storavan | sarek )
+
+      F90compiler="Lahey"
+      f90="lf95"
+      F90Opt="--trap"
+
+      Ccompiler="GNU"
+      Symbols="-DNAGf90Fortran"
+
+      LinkOpt="--staticlink"
+      #LinkOpt="-L/scratch/local2/champ/lib -lfftw -lrfftw"
+   
+      make="make"
+
+      ;;
+
+   gardiken | xxf | yang )
+
+      F90compiler="Fujitsu"
+      f90="frt"
+      F90Opt=""
+
+      Ccompiler="Sun"
+      Symbols=""
+
+      LinkOpt=""
+
+      make="gmake"
+
+      ;;
+
+   grim )
+
+      F90compiler="Sun"
+      f90="f90"
+      F90Opt=""
+
+      Ccompiler="Sun"
+#      Symbols="-D_SSIZE_T"
+      Symbols=""
+
+      LinkOpt=""
+
+      make="make"
+
+      ;;
+
+   igam08ws )
+
+      F90compiler="NAG"
+      f90="nf95"
+      F90Opt=""
+
+      Ccompiler="Sun"
+      Symbols=""
+
+      LinkOpt=""
+
+      make="gmake"
+
+      ;;
+
+   igam20ws )
+
+      F90compiler="NAG64"
+      f90="nf95"
+      F90Opt=""
+
+      Ccompiler="GNU64"
+      Symbols="-DNAGf90Fortran"
+
+      LinkOpt=""
+
+      make="make"
+
+      ;;
+
+   fugue.arp.harvard.edu )
+
+      F90compiler="NAG-MPICH2"
+      f90="/share/apps/nag-mpich2/bin/mpif90"
+      F90Opt="-DMPICH2"
+
+      Ccompiler="NAG-MPICH2"
+      Symbols="-DNAGf90Fortran"
+
+      LinkOpt=""
+
+      make="make"
+      
+      ;;
+
+   gormobil | gorbunov )
+
+      F90compiler="NAG"
+      f90="f95"
+      F90Opt=""
+
+      Ccompiler="GNU"
+      Symbols="-DNAGf90Fortran"
+
+      LinkOpt=""
+   
+      make="make"
+
+      ;;
+
+   kystpilen )
+
+      F90compiler="Intel"
+      f90="ifort"
+      F90Opt=""
+
+      Ccompiler="GNU"
+      Symbols="-DNAGf90Fortran"
+
+      LinkOpt=""
+   
+      make="make"
+
+      ;;
+
+   * )
+
+      echo "Unknown machine $machine, using default settings"
+
+      F90compiler="Sun"
+      f90="f90"
+      F90Opt=""
+
+      Ccompiler="Sun"
+      Symbols=""
+
+      LinkOpt=""
+
+      make="gmake"
+
+      ;;
+
+esac
+
+
+#--- 1.2. Defining Fortran options
+
+case $F90compiler in
+   Fujitsu )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-X9 -Free -Haesu -Am -M."
+      else
+         foptions="-X9 -Free -Kfast,gs -KULTRA,V8PLUS -Kfastlib -Am -M."
+      fi
+      ;;
+   Sun )
+      MODPREF='-M'
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-free -C"
+      else
+         foptions="-free -native -fast"
+      fi
+      ;;
+   NAG     )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+	 foptions="-C=all -gline -O0"
+      else
+	 foptions="-O4 -ieee=stop -w=all -unsharedf95 -dcfuns -kind=byte -gline -C"
+      fi
+      ;;
+   NAG64   )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+#	 foptions="-C=all -gline -O0"
+	 foptions="-target=i586 -O0 -Wc,-m32 -Wl,-m32 -ieee=stop -w=obs -w=usy -w=uei -unsharedf95 -dcfuns -kind=byte -gline -C"
+#	 foptions="-O0 -Wc,-m32 -Wl,-m32 -ieee=stop -w=obs -w=usy -w=uei -unsharedf95 -dcfuns -kind=byte -gline -C"
+      else
+	 foptions="-target=i586 -O0 -Wc,-m32 -Wl,-m32 -ieee=stop -w=obs -w=usy -w=uei -unsharedf95 -dcfuns -kind=byte -gline -C"
+#	 foptions="-O0 -Wc,-m32 -Wl,-m32 -ieee=stop -w=obs -w=usy -w=uei -unsharedf95 -dcfuns -kind=byte -gline -C"
+      fi
+      ;;
+   MIPS    )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-col120 -C"
+      else
+         foptions="-col120 -Ofast"
+      fi
+      ;;
+   Lahey   )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+         foptions=""
+      else
+         foptions="-Kfast -tpp -Cpp"
+      fi
+      ;;
+   Intel )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-g"
+      else
+         foptions="-O2 -g"
+      fi
+      ;;
+   PGF )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-g -C"
+      else
+         foptions="-O2 -g"
+      fi
+      ;;
+   PGF-MPICH2 )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-g -C"
+      else
+         foptions="-O3"
+      fi
+      ;;
+   NAG-MPICH2 )
+      MODPREF='-I'
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-g -C -mismatch"
+      else
+         foptions="-O2 -mismatch"
+      fi
+      ;;
+esac
+
+MODPATHS=$MODPREF"."
+
+LIBS=""
+REVLIBS=""
+for LIBPATH in $LIBPATHS
+do
+   MODPATHS="$MODPATHS $MODPREF$LIBPATH"
+   LIBNAME=`echo $LIBPATH | sed -e's:.*/::'`
+#   LIB=`ls $LIBPATH/*.a`
+   LIB=$LIBPATH/$LIBNAME.a
+   LIBS="$LIBS $LIB"
+   REVLIBS="$LIB $REVLIBS"
+done
+
+foptions="$foptions $MODPATHS $F90Opt"
+
+
+#--- 1.3. Defining C options
+
+case $Ccompiler in
+   Sun     )
+      coptions="-c -I. -I../include -native -fast -xO5 -dalign"
+      ;;
+   SGI     )
+      coptions="-c -I. -I../include -xO5"
+      ;;
+   PGF-MPICH2     )
+      coptions="-c -I. -I../include  -I../netcdf -O"
+      ;;
+   NAG-MPICH2     )
+      coptions="-c -I. -I../include  -I../netcdf -O"
+      ;;
+   GNU     )
+      CFLAGS="-O6 -fomit-frame-pointer -Wall -W -Wcast-qual -Wpointer-arith -Wcast-align -pedantic -fno-schedule-insns -fschedule-insns2 -malign-double -fstrict-aliasing -mcpu=pentiumpro -mpreferred-stack-boundary=2"
+      coptions="$CFLAGS -c -I. -I../include"
+      ;;
+   GNU64   )
+#      CFLAGS="-c -m32 -I. -O0 -ffast-math"
+      CFLAGS="-c -m32 -I. -O6 -ffast-math"
+      coptions="$CFLAGS -c -I. -I../include"
+      ;;
+esac
+
+coptions=${coptions}" "${Symbols}
+
+
+#---------------------------------------
+# 2. PRODUCING MAKE FILE
+#---------------------------------------
+
+
+cat > $OUT.mak <<EOF
+#
+##---------------------------------------
+## Generated automatically by
+## $OUT.gen and mak.gen
+## M. E. Gorbunov. V $ver
+##---------------------------------------
+#
+#----------------------------------------
+# Programs
+#----------------------------------------
+#
+SHELL = /bin/sh
+F90   = $f90
+CC    = /share/apps/nag-mpich2/bin/mpicc
+AR    = ar
+MAKE  = $make
+#
+#
+#----------------------------------------
+# cc options
+#----------------------------------------
+#
+# $Ccompiler
+#
+coptions = $coptions
+#
+#
+#----------------------------------------
+# FORTRAN-90  options
+#----------------------------------------
+#
+# $F90compiler
+#
+foptions = $foptions 
+#
+EOF
+
+
+if [ "$TYPE" = "x" ]; then
+
+   cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.x <-- $OUT.a $LIBS
+#----------------------------------------
+#
+$OUT.x :: $OUT.a $LIBS
+	\$(AR) x $OUT.a $OUT.o
+	\$(F90) \$(foptions) -o $OUT.x $OUT.o $OUT.a $REVLIBS $LinkOpt
+	rm -f $OUT.o
+#
+#
+EOF
+
+fi
+
+
+if [ "$LIBPATHS" != "" ]; then
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.a <-- *.a
+#----------------------------------------
+#
+EOF
+
+echo "$OUT.a :: $LIBS" >> $OUT.mak
+
+cat >> $OUT.mak <<EOF
+#
+#
+#----------------------------------------
+# *.a <-- *.f90
+#----------------------------------------
+#
+EOF
+
+for LIBPATH in $LIBPATHS
+do
+
+   LIBNAME=`echo $LIBPATH | sed -e's!.*/!!'`
+   LIB=$LIBPATH/$LIBNAME.a
+   MAK="$LIBNAME.mak"
+#   LIB="`ls $LIBPATH/*.a`"
+#   MAK="`cd  $LIBPATH; ls *.mak`"
+
+   if [ "$TYPE" = "x" ] ; then
+      cat >> $OUT.mak <<EOF
+$LIB::
+	@cd $LIBPATH; \$(MAKE) -f $MAK
+#
+EOF
+   else
+      cat >> $OUT.mak <<EOF
+$LIB :: $LIBPATH/*.f90
+	@cd $LIBPATH ; \$(MAKE) -f $MAK
+#
+EOF
+   fi
+
+done
+
+fi
+
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.a <--  $OUT.a(*.o)
+#----------------------------------------
+#
+EOF
+
+OBJS=""
+
+CSRCS=`find . -maxdepth 1 -name '*.c' -print`
+if [ "$CSRCS" != "" ] ; then
+   CSRCS="*.c"
+else
+   CSRCS=""
+fi
+
+for SRC in *.f90 $CSRCS
+do
+   OBJS="$OBJS`echo $SRC \
+        | sed -e's!\.f90!.o !' -e's!\.c!.o !'`"
+done
+
+cat >> $OUT.mak <<EOF
+$OUT.a :: $OUT.a($OBJS)
+EOF
+
+cat >> $OUT.mak <<EOF
+#
+#
+#----------------------------------------
+# $OUT.a(*.o) <-- *.a(*.o) *.f90
+#----------------------------------------
+#
+EOF
+
+for SRC in *.f90 ; do
+   echo "Analyzing dependencies of $SRC:"
+   MODS="`cat $SRC \
+        | grep -i '^[ ]*Use ' \
+        | sed -e's!^[ ]*[uU][sS][eE]!!g' \
+              -e's! *, *[oO][nN][lL][yY] *:.*!!'`"
+   LIBOS=""
+   for LIBPATH in . $LIBPATHS ; do
+      if [ "$LIBPATH" = "." ] ; then
+         LIB=$OUT.a
+      else
+#         LIB="`ls $LIBPATH/*.a`"
+         LIBNAME=`echo $LIBPATH | sed -e's:.*/::'`
+         LIB=$LIBPATH/$LIBNAME.a
+      fi
+      LIBMODS="`cd $LIBPATH; ls *.f90`"
+      LIBO="$LIB("
+      for LIBMOD in $LIBMODS ; do
+         for MOD in $MODS ; do
+            LIBO="$LIBO`echo $LIBMOD  \
+                   | grep -w -i $MOD \
+                   | sed -e's!f90!o !'`"
+         done
+      done
+      LIBO="$LIBO)"
+      echo "   $LIBO"
+      LIBO="`echo $LIBO | sed -e's! )!)!'`"
+      if [ "$LIBO" != "$LIB()" ] ; then
+         LIBOS="$LIBOS $LIBO"
+      fi
+   done
+   SRCO="`echo $SRC | sed -e's!\.f90!.o!'`"
+   cat >> $OUT.mak <<EOF
+$OUT.a($SRCO) :: $LIBOS $SRC
+EOF
+done
+
+cat >> $OUT.mak <<EOF
+#
+$OUT.a(%.o) : %.f90
+	\$(F90) -c \$(foptions) $<
+	\$(AR) -r $OUT.a $%
+	rm $%
+#
+EOF
+
+for SRC in $CSRCS ; do
+   SRCO="`echo $SRC | sed -e's!\.c!.o!'`"
+   cat >> $OUT.mak <<EOF
+$OUT.a($SRCO) :: $SRC
+	\$(CC) \$(coptions) $SRC
+	\$(AR) -r $OUT.a $SRCO
+	rm $SRCO
+EOF
+done
+
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# Cleaning:
+#----------------------------------------
+#
+clean :
+EOF
+
+if test "$TYPE" = "x" ; then
+echo "	-rm $OUT.x" >> $OUT.mak
+fi
+
+
+cat >> $OUT.mak <<EOF
+	-rm $OUT.a
+	-rm *.mod
+#
+EOF
+
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+OUT="MPAS"
+TYPE="a"
+LIBPATHS="../Lib ../GRIB ../GCM ../ICO ../Models ../occlib"
+CFG="mpi"
+
+export OUT TYPE LIBPATHS CFG
+
+../hdr/mak.gen

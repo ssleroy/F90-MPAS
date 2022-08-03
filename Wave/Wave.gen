@@ -1,0 +1,11 @@
+#!/bin/sh
+
+OUT="Wave"
+TYPE="x"
+LIBPATHS="../Lib ../FFTW ../Models ../occlib ../GCM ../ICO ../GRIB ../ECHAM ../NCEP ../MPAS \
+../Phantom ../Wavelib"
+
+export OUT TYPE LIBPATHS
+
+../hdr/mak.gen
+

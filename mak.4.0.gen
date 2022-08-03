@@ -1,0 +1,311 @@
+#!/bin/sh
+
+echo "OUT      = $OUT"
+echo "TYPE     = $TYPE"
+echo "MODE     = $MODE"
+echo "LIBPATHS = $LIBPATHS"
+
+#---------------------------------------
+# 1. SETTING COMPILER OPTIONS
+#---------------------------------------
+
+F90compiler="Lahey"
+Ccompiler="GNU"
+
+case $F90compiler in
+   Fujitsu )
+      MODPREF='-I'
+      ;;
+   Solaris )
+      MODPREF='-M'
+      ;;
+   NAG     )
+      MODPREF='-I'
+      ;;
+   MIPS    )
+      MODPREF='-I'
+      ;;
+   Lahey   )
+      MODPREF='-I'
+      ;;
+esac
+
+MODPATHS=$MODPREF"."
+
+LIBS=""
+REVLIBS="-L/scratch/local2/champ/lib -lfftw -lrfftw"
+for LIBPATH in $LIBPATHS
+do
+   MODPATHS="$MODPATHS $MODPREF$LIBPATH"
+   LIBNAME=`echo $LIBPATH | sed -e's:.*/::'`
+#   LIB=`ls $LIBPATH/*.a`
+   LIB=$LIBPATH/$LIBNAME.a
+   LIBS="$LIBS $LIB"
+   REVLIBS="$LIB $REVLIBS"
+done
+
+case $F90compiler in
+   Fujitsu )
+      f90="f90"
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-c -X9 -Free -Haesu -Am -M. $MODPATHS"
+      else
+         foptions="-c -X9 -Free -Kfast,gs -KULTRA,V8PLUS -Kfastlib -Am -M. $MODPATHS"
+      fi
+      ;;
+   Solaris )
+      f90="f90"
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-c -C $MODPATHS"
+      else
+         foptions="-c $MODPATHS"
+      fi
+      ;;
+   NAG     )
+      f90="f90"
+      foptions="-c -C=all -O4 $MODPATHS"
+      ;;
+   MIPS    )
+      f90="f90"
+      if [ "$MODE" = "debug" ] ; then
+         foptions="-c -col120 -C $MODPATHS"
+      else
+         foptions="-c -col120 -Ofast $MODPATHS"
+      fi
+      ;;
+   Lahey   )
+      f90="lf95"
+      foptions="-Kfast -tpp -Cpp -c $MODPATHS -I/scratch/local2/champ/include"
+      ;;
+esac
+
+case $Ccompiler in
+   Sun     )
+      coptions="-c -I. -native -fast -xO5 -dalign"
+      ;;
+   SGI     )
+      coptions="-c -I. -xO5"
+      ;;
+   GNU     )
+      coptions="-O -c -I. -DNAGf90Fortran"
+      ;;
+esac
+
+
+cat > $OUT.mak <<EOF
+#
+##---------------------------------------
+## Generated automatically by
+## $OUT.gen and mak.gen
+## M. E. Gorbunov. V 4.0. 26 Oct 2002
+##---------------------------------------
+#
+#----------------------------------------
+# Programs
+#----------------------------------------
+#
+SHELL = /bin/sh
+F90   = $f90
+CC    = cc
+AR    = ar
+#
+#
+#----------------------------------------
+# cc options
+#----------------------------------------
+#
+# $Ccompiler
+#
+coptions = $coptions
+#
+#
+#----------------------------------------
+# FORTRAN-90  options
+#----------------------------------------
+#
+# $F90compiler
+#
+foptions = $foptions
+#
+EOF
+
+
+if [ "$TYPE" = "x" ]; then
+
+   cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.x <-- $OUT.a $LIBS
+#----------------------------------------
+#
+$OUT.x :: $OUT.a $LIBS
+	\$(AR) x $OUT.a $OUT.o
+	\$(F90) -o $OUT.x $OUT.o $OUT.a $REVLIBS
+	rm -f $OUT.o
+#
+#
+EOF
+
+fi
+
+
+if [ "$LIBPATHS" != "" ]; then
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.a <-- *.a
+#----------------------------------------
+#
+EOF
+
+echo "$OUT.a :: $LIBS" >> $OUT.mak
+
+cat >> $OUT.mak <<EOF
+#
+#
+#----------------------------------------
+# *.a <-- *.f90
+#----------------------------------------
+#
+EOF
+
+for LIBPATH in $LIBPATHS
+do
+
+   LIBNAME=`echo $LIBPATH | sed -e's!.*/!!'`
+   LIB=$LIBPATH/$LIBNAME.a
+   MAK="$LIBNAME.mak"
+#   LIB="`ls $LIBPATH/*.a`"
+#   MAK="`cd  $LIBPATH; ls *.mak`"
+
+   if [ "$TYPE" = "x" ] ; then
+      cat >> $OUT.mak <<EOF
+$LIB::
+	@cd $LIBPATH; make -f $MAK
+#
+EOF
+   else
+      cat >> $OUT.mak <<EOF
+$LIB :: $LIBPATH/*.f90
+	@cd $LIBPATH ; make -f $MAK
+#
+EOF
+   fi
+
+done
+
+fi
+
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.a <--  $OUT.a(*.o)
+#----------------------------------------
+#
+EOF
+
+OBJS=""
+
+CSRCS=`find . -name '*.c' -print`
+if [ "$CSRCS" != "" ] ; then
+   CSRCS="*.c"
+else
+   CSRCS=""
+fi
+
+for SRC in *.f90 $CSRCS
+do
+   OBJS="$OBJS`echo $SRC \
+        | sed -e's!\.f90!.o !' -e's!\.c!.o !'`"
+done
+
+cat >> $OUT.mak <<EOF
+$OUT.a :: $OUT.a($OBJS)
+EOF
+
+cat >> $OUT.mak <<EOF
+#
+#
+#----------------------------------------
+# $OUT.a(*.o) <-- *.a(*.o) *.f90
+#----------------------------------------
+#
+EOF
+
+for SRC in *.f90 ; do
+   echo "Analyzing dependencies of $SRC:"
+   MODS="`cat $SRC \
+        | grep -i '^[ ]*Use ' \
+        | sed -e's!^[ ]*[uU][sS][eE]!!g' \
+              -e's! *, *[oO][nN][lL][yY] *:.*!!'`"
+   LIBOS=""
+   for LIBPATH in . $LIBPATHS ; do
+      if [ "$LIBPATH" = "." ] ; then
+         LIB=$OUT.a
+      else
+#         LIB="`ls $LIBPATH/*.a`"
+         LIBNAME=`echo $LIBPATH | sed -e's:.*/::'`
+         LIB=$LIBPATH/$LIBNAME.a
+      fi
+      LIBMODS="`cd $LIBPATH; ls *.f90`"
+      LIBO="$LIB("
+      for LIBMOD in $LIBMODS ; do
+         for MOD in $MODS ; do
+            LIBO="$LIBO`echo $LIBMOD  \
+                   | grep -w -i $MOD \
+                   | sed -e's!f90!o !'`"
+         done
+      done
+      LIBO="$LIBO)"
+      echo "   $LIBO"
+      LIBO="`echo $LIBO | sed -e's! )!)!'`"
+      if [ "$LIBO" != "$LIB()" ] ; then
+         LIBOS="$LIBOS $LIBO"
+      fi
+   done
+   SRCO="`echo $SRC | sed -e's!\.f90!.o!'`"
+   cat >> $OUT.mak <<EOF
+$OUT.a($SRCO) :: $LIBOS $SRC
+EOF
+done
+
+cat >> $OUT.mak <<EOF
+#
+$OUT.a(%.o) : %.f90
+	\$(F90) \$(foptions) $<
+	\$(AR) -r $OUT.a $%
+	rm $%
+#
+EOF
+
+for SRC in $CSRCS ; do
+   SRCO="`echo $SRC | sed -e's!\.c!.o!'`"
+   cat >> $OUT.mak <<EOF
+$OUT.a($SRCO) :: $SRC
+	\$(CC) \$(coptions) $SRC
+	\$(AR) -r $OUT.a $SRCO
+	rm $SRCO
+EOF
+done
+
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# Cleaning:
+#----------------------------------------
+#
+clean :
+EOF
+
+if test "$TYPE" = "x" ; then
+echo "	-rm $OUT.x" >> $OUT.mak
+fi
+
+
+cat >> $OUT.mak <<EOF
+	-rm $OUT.a
+	-rm *.mod
+#
+EOF
+
+

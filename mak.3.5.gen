@@ -1,0 +1,239 @@
+#!/bin/sh
+
+echo "OUT      = $OUT"
+echo "TYPE     = $TYPE"
+echo "MODE     = $MODE"
+echo "LIBPATHS = $LIBPATHS"
+
+MODPATHS="-I."
+
+LIBS=""
+REVLIBS=""
+for LIBPATH in $LIBPATHS
+do
+   MODPATHS="$MODPATHS -I$LIBPATH"
+   LIBS="$LIBS `ls $LIBPATH/*.a`"
+   REVLIBS="`ls $LIBPATH/*.a` $REVLIBS"
+done
+
+
+cat > $OUT.mak <<EOF
+#
+##---------------------------------------
+## Generated automatically by
+## $OUT.gen and mak.gen
+## M. E. Gorbunov. V 3.5. 30 Nov 2001
+##---------------------------------------
+#
+#----------------------------------------
+# Programs
+#----------------------------------------
+#
+SHELL = /bin/sh
+F90   = f95
+CC    = cc
+AR    = ar
+#
+#
+#----------------------------------------
+# gcc options
+#----------------------------------------
+#
+coptions = -c -I. -native -fast -xO5 -dalign
+#
+#
+#----------------------------------------
+# FORTRAN-90  options
+#----------------------------------------
+#
+# NAG
+#
+#foptions = -c -C=all -O4 -I. $MODPATHS
+#
+# Fujitsu
+#
+EOF
+
+if [ "$MODE" = "debug" ] ; then
+   cat >> $OUT.mak <<EOF
+foptions  = -c -X9 -Free -Haesu -Am -M. $MODPATHS
+#
+EOF
+else
+   cat >> $OUT.mak <<EOF
+foptions  = -c -X9 -Free -Kfast,gs -KULTRA,V8PLUS -Kfastlib -Am -M. $MODPATHS
+#
+EOF
+fi
+
+
+if [ "$TYPE" = "x" ]; then
+
+   cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.x <-- $OUT.a $LIBS
+#----------------------------------------
+#
+$OUT.x :: $OUT.a $LIBS
+	$(F90) -o $OUT.x $OUT.a $REVLIBS
+#
+#
+EOF
+
+fi
+
+
+if [ "$LIBPATHS" != "" ]; then
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.a <-- *.a
+#----------------------------------------
+#
+EOF
+
+echo "$OUT.a :: $LIBS" >> $OUT.mak
+
+cat >> $OUT.mak <<EOF
+#
+#
+#----------------------------------------
+# *.a <-- *.f90
+#----------------------------------------
+#
+EOF
+
+for LIBPATH in $LIBPATHS
+do
+
+   LIB="`ls $LIBPATH/*.a`"
+   MAK="`cd  $LIBPATH; ls *.mak`"
+
+   if [ "$TYPE" = "x" ] ; then
+      cat >> $OUT.mak <<EOF
+$LIB::
+	@cd $LIBPATH; make -f $MAK
+#
+EOF
+   else
+      cat >> $OUT.mak <<EOF
+$LIB :: $LIBPATH/*.f90
+	@cd $LIBPATH ; make -f $MAK
+#
+EOF
+   fi
+
+done
+
+fi
+
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# $OUT.a <--  $OUT.a(*.o)
+#----------------------------------------
+#
+EOF
+
+OBJS=""
+if [ -f *.c ]; then
+   CSRCS="*.c"
+else
+   CSRCS=""
+fi
+
+for SRC in *.f90 $CSRCS
+do
+   OBJS="$OBJS`echo $SRC \
+        | sed -e's!\.f90!.o !' -e's!\.c!.o !'`"
+done
+
+cat >> $OUT.mak <<EOF
+$OUT.a :: $OUT.a($OBJS)
+EOF
+
+cat >> $OUT.mak <<EOF
+#
+#
+#----------------------------------------
+# $OUT.a(*.o) <-- *.a(*.o) *.f90
+#----------------------------------------
+#
+EOF
+
+for SRC in *.f90 ; do
+   echo "Analyzing dependencies of $SRC:"
+   MODS="`cat $SRC \
+        | grep -i '^[ ]*Use ' \
+        | sed -e's!^[ ]*[uU][sS][eE]!!g' \
+              -e's! *, *[oO][nN][lL][yY] *:.*!!'`"
+   LIBOS=""
+   for LIBPATH in . $LIBPATHS ; do
+      if [ "$LIBPATH" = "." ] ; then
+         LIB=$OUT.a
+      else
+         LIB="`ls $LIBPATH/*.a`"
+      fi
+      LIBMODS="`cd $LIBPATH; ls *.f90`"
+      LIBO="$LIB("
+      for LIBMOD in $LIBMODS ; do
+         for MOD in $MODS ; do
+            LIBO="$LIBO`echo $LIBMOD  \
+                   | grep -w -i $MOD \
+                   | sed -e's!f90!o !'`"
+         done
+      done
+      LIBO="$LIBO)"
+      echo "   $LIBO"
+      LIBO="`echo $LIBO | sed -e's! )!)!'`"
+      if [ "$LIBO" != "$LIB()" ] ; then
+         LIBOS="$LIBOS $LIBO"
+      fi
+   done
+   SRCO="`echo $SRC | sed -e's!\.f90!.o!'`"
+   cat >> $OUT.mak <<EOF
+$OUT.a($SRCO) :: $LIBOS $SRC
+EOF
+done
+
+cat >> $OUT.mak <<EOF
+#
+$OUT.a(%.o) : %.f90
+	$(F90) $(foptions) $<
+	$(AR) -r $OUT.a $%
+	rm $%
+#
+EOF
+
+for SRC in $CSRCS ; do
+   SRCO="`echo $SRC | sed -e's!\.c!.o!'`"
+   cat >> $OUT.mak <<EOF
+$OUT.a($SRCO) :: $SRC
+	$(CC) $(coptions) $SRC
+	$(AR) -r $OUT.a $SRCO
+	rm $SRCO
+EOF
+done
+
+cat >> $OUT.mak <<EOF
+#
+#----------------------------------------
+# Cleaning:
+#----------------------------------------
+#
+clean :
+EOF
+
+if test "$TYPE" = "x" ; then
+echo "	-rm $OUT.x" >> $OUT.mak
+fi
+
+
+cat >> $OUT.mak <<EOF
+	-rm $OUT.a
+	-rm *.mod
+#
+EOF
+
+

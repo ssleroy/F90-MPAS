@@ -1,0 +1,88 @@
+!==========================================================
+Function/Subroutine <Name> &
+  (InArg,     & ! <-- <Description>
+   InArg,     & ! <-- <Description>
+   InOutArg,  & ! <-> <Description>
+   InOutArg,  & ! <-> <Description>
+   OutArg,    & ! --> <Description>
+   OutArg)      ! --> <Description>
+   InArg)     & ! <-- <Description>
+Result(<Res>)   ! --> <Description of function result>
+!
+! <What this subprogram is for>
+!----------------------------------------------------------
+! Method:
+!   <How it does it>
+!----------------------------------------------------------
+! (C) Copyright 2009, M. E. Gorbunov.
+!
+! Version |    Date     | Comment
+!---------+-------------+--------------------
+!   x.x   | dd mmm 2009 | Original version.
+!----------------------------------------------------------
+! Modules used:
+!
+Use, only: &
+! Imported Type Definitions:
+! Imported Parameters:
+! Imported Scalar Variables:
+! Imported Array Variables:
+! Imported Routines:
+! Imported Operators:
+!----------------------------------------------------------
+Implicit None
+!----------------------------------------------------------
+! Input arguments:
+!
+<Type>, Intent(In) :: &
+   InArg    ! <Description>
+            ! <Comments>
+!
+! Inout arguments:
+!
+<Type>, Intent(InOut) :: &
+   InOutArg ! <Description>
+            ! <Comment>
+!
+! Output arguments:
+!
+<Type>, Intent(Out) :: &
+   OutArg   ! <Description>
+            ! <Comment>
+!
+! Function result:
+!
+<Type> :: &
+   <Name>   ! <Description>
+!           ! <Comment>
+!----------------------------------------------------------
+! Include statements:
+!----------------------------------------------------------
+! Local Parameters:
+!
+!
+! Local Scalars:
+!
+!
+! Local Arrays:
+!
+!
+! Externals:
+!
+!
+! Interfaces:
+!
+!----------------------------------------------------------
+! Global variables used:
+!
+!----------------------------------------------------------
+
+
+!----------------------------------------------------------
+! 1. FIRST SECTION
+!----------------------------------------------------------
+
+
+End Function/Subroutine <Name>
+
+

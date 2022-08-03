@@ -1,0 +1,44 @@
+!----------------------------------------------------------
+Function/Subroutine <Name>(InArg, InOutArg, OutArg)
+Result(<Res>)
+!
+! <What this subprogram is for and how it does it>
+!----------------------------------------------------------
+Implicit None
+!----------------------------------------------------------
+<Type>, Intent(In) :: &
+   InArg    ! <Description>
+            ! <Comments>
+<Type>, Intent(InOut) :: &
+   InOutArg ! <Description>
+            ! <Comment>
+<Type>, Intent(Out) :: &
+   OutArg   ! <Description>
+            ! <Comment>
+<Type> :: &
+   <Name>   ! <Description>
+!           ! <Comment>
+!----------------------------------------------------------
+! Local Parameters:
+!
+!
+! Local Scalars:
+!
+!
+! Local Arrays:
+!
+!
+! Externals:
+!
+!
+! Interfaces:
+!
+!----------------------------------------------------------
+! Global variables used:
+!
+!----------------------------------------------------------
+
+
+End Function/Subroutine <Name>
+
+

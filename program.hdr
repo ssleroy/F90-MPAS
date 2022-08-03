@@ -1,0 +1,62 @@
+!
+Program <Name>
+!
+! <What this program is for>
+!----------------------------------------------------------
+! Method:
+!   <How it does it>
+!----------------------------------------------------------
+! Command line parameters:
+!   -----------------------------------
+!   Parameters   | Descriptions
+!   -----------------------------------
+!   <parameter>  | <description>
+!
+! Input files:
+!   <Description of files, in which routine they are read>
+!
+! Output files:
+!   <Description of files, in which routine they are written>
+!----------------------------------------------------------
+! (C) Copyright 2009, M. E. Gorbunov.
+!
+! Version |    Date     | Comment
+!---------+-------------+--------------------
+!   x.x   | dd mmm 2009 | Original version.
+!----------------------------------------------------------
+! Modules used:
+!
+Use, only: &
+! Imported Type Definitions:
+! Imported Parameters:
+! Imported Scalar Variables:
+! Imported Array Variables:
+! Imported Routines:
+! Imported Operators:
+!----------------------------------------------------------
+Implicit None
+!----------------------------------------------------------
+! Include statements:
+!----------------------------------------------------------
+! Local Parameters:
+!
+!
+! Local Scalars:
+!
+!
+! Local Arrays:
+!
+!
+! Externals:
+!
+!
+! Interfaces:
+!----------------------------------------------------------
+
+
+!----------------------------------------------------------
+! 1. FIRST SECTION
+!----------------------------------------------------------
+
+End Program <Name>
+

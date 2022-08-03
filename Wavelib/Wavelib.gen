@@ -1,0 +1,11 @@
+#!/bin/sh
+
+OUT="Wavelib"
+TYPE="a"
+LIBPATHS="../Lib ../FFTW ../Models ../occlib ../GCM ../GRIB ../ICO ../ECHAM ../NCEP ../MPAS ../Phantom "
+CFG="mpi"
+
+export OUT TYPE LIBPATHS CFG
+
+../hdr/mak.gen
+

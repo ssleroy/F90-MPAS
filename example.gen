@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Name of the project
+OUT="occ"
+
+# Type may be "x" for executable or "a" for libraries
+TYPE="x"
+
+# Paths of libraries used for make
+LIBPATHS="../Lib"
+
+export OUT TYPE LIBPATHS
+
+../hdr/mak.gen
+

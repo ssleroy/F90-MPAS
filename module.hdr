@@ -1,0 +1,69 @@
+!
+Module <Name>
+!
+! <What this module is for>
+!----------------------------------------------------------
+! (C) Copyright 2009, M. E. Gorbunov.
+!
+! Version |    Date     | Comment
+!---------+-------------+--------------------
+!   x.x   | dd mmm 2009 | Original version.
+!----------------------------------------------------------
+! Modules used:
+!
+Use, only: &
+! Imported Type Definitions:
+! Imported Parameters:
+! Imported Scalar Variables:
+! Imported Array Variables:
+! Imported Routines:
+! Imported Operators:
+!----------------------------------------------------------
+Implicit None
+!----------------------------------------------------------
+! Include statements:
+!----------------------------------------------------------
+! Public Declarations:
+!
+!
+! Public Type Definitions:
+!
+!
+! Public Parameters:
+!
+!
+! Public Scalars:
+!
+!
+! Public Arrays:
+!
+!----------------------------------------------------------
+! Private Declarations:
+!
+!
+! Private Type Definitions:
+!
+!
+! Private Parameters:
+!
+!
+! Private Scalars:
+!
+!
+! Private Arrays:
+!
+!
+! Operator definitions:
+!
+!
+! Interfaces:
+!
+!----------------------------------------------------------
+!
+Contains
+
+! <Procedures contained in this module>
+
+End Module <Name>
+
+

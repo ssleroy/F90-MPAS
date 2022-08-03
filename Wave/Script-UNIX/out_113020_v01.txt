@@ -1,0 +1,316 @@
+  Found ../../Models/MSIS01.asc  Found ../../Models/MSIS02.asc  Found ../../Models/MSIS03.asc  Found ../../Models/MSIS04.asc  Found ../../Models/MSIS05.asc  Found ../../Models/MSIS06.asc  Found ../../Models/MSIS07.asc  Found ../../Models/MSIS08.asc  Found ../../Models/MSIS09.asc  Found ../../Models/MSIS10.asc  Found ../../Models/MSIS11.asc  Found ../../Models/MSIS12.asc  Y1 =    0.0000, Y2 =   20.0000, RStat = 1  Y1 =    0.0000, Y2 =   10.0000, RStat = 0  Y1 =    0.0000, Y2 =    5.0000, RStat = 0  Y1 =    0.0000, Y2 =    2.5000, RStat = 0  Y1 =    1.2500, Y2 =    2.5000, RStat = 1  Y1 =    1.8750, Y2 =    2.5000, RStat = 1  Y1 =    1.8750, Y2 =    2.1875, RStat = 0  Y1 =    1.8750, Y2 =    2.0312, RStat = 0  Y1 =    1.9531, Y2 =    2.0312, RStat = 1  Y1 =    1.9922, Y2 =    2.0312, RStat = 1  Y1 =    1.9922, Y2 =    2.0117, RStat = 0  Y1 =    2.0020, Y2 =    2.0117, RStat = 1  Y1 =    2.0068, Y2 =    2.0117, RStat = 1  Y1 =    2.0093, Y2 =    2.0117, RStat = 1  Y1 =    2.0093, Y2 =    2.0105, RStat = 0  Y1 =    2.0099, Y2 =    2.0105, RStat = 1  i =     1, P =    61.992, Xi =  2.408E-03, Xmax =  1391.  i =     2, P =    60.026, Xi =  2.330E-03, Xmax =  1391.  i =     3, P =    58.093, Xi =  2.253E-03, Xmax =  1391.  i =     4, P =    56.193, Xi =  2.178E-03, Xmax =  1391.  i =     5, P =    54.326, Xi =  2.103E-03, Xmax =  1391.  i =     6, P =    52.491, Xi =  2.030E-03, Xmax =  1391.  i =     7, P =    50.689, Xi =  1.957E-03, Xmax =  1391.  i =     8, P =    48.920, Xi =  1.884E-03, Xmax =  1391.  i =     9, P =    47.183, Xi =  1.812E-03, Xmax =  1391.  i =    10, P =    45.479, Xi =  1.740E-03, Xmax =  1391.  i =    11, P =    43.808, Xi =  1.667E-03, Xmax =  1391.  i =    12, P =    42.170, Xi =  1.594E-03, Xmax =  1391.  i =    13, P =    40.564, Xi =  1.518E-03, Xmax =  1391.  i =    14, P =    38.991, Xi =  1.440E-03, Xmax =  1391.  i =    15, P =    37.450, Xi =  1.358E-03, Xmax =  1391.  i =    16, P =    35.943, Xi =  1.272E-03, Xmax =  1391.  i =    17, P =    34.468, Xi =  1.181E-03, Xmax =  1391.  i =    18, P =    33.026, Xi =  1.083E-03, Xmax =  1391.  i =    19, P =    31.616, Xi =  9.774E-04, Xmax =  1391.  i =    20, P =    30.239, Xi =  8.622E-04, Xmax =  1391.  i =    21, P =    28.895, Xi =  7.360E-04, Xmax =  1391.  i =    22, P =    27.584, Xi =  5.969E-04, Xmax =  1391.  i =    23, P =    26.305, Xi =  4.429E-04, Xmax =  1391.  i =    24, P =    25.060, Xi =  2.729E-04, Xmax =  1391.  i =    25, P =    23.847, Xi =  8.747E-05, Xmax =  1391.  i =    26, P =    22.666, Xi = -1.159E-04, Xmax =  1391.  i =    27, P =    21.519, Xi = -3.461E-04, Xmax =  1391.  i =    28, P =    20.404, Xi = -6.131E-04, Xmax =  1391.  i =    29, P =    19.323, Xi = -9.218E-04, Xmax =  1391.  i =    30, P =    18.274, Xi = -1.269E-03, Xmax =  1391.  i =    31, P =    17.258, Xi = -1.653E-03, Xmax =  1391.  i =    32, P =    16.274, Xi = -2.081E-03, Xmax =  1391.  i =    33, P =    15.323, Xi = -2.558E-03, Xmax =  1391.  i =    34, P =    14.405, Xi = -3.096E-03, Xmax =  1391.  i =    35, P =    13.519, Xi = -3.706E-03, Xmax =  1391.  i =    36, P =    12.667, Xi = -4.401E-03, Xmax =  1391.  i =    37, P =    11.849, Xi = -5.193E-03, Xmax =  1391.  i =    38, P =    11.065, Xi = -6.117E-03, Xmax =  1391.  i =    39, P =    10.313, Xi = -7.240E-03, Xmax =  1391.  i =    40, P =     9.593, Xi = -8.321E-03, Xmax =  1395.  i =    41, P =     8.904, Xi = -8.986E-03, Xmax =  1403.  i =    42, P =     8.246, Xi = -9.463E-03, Xmax =  1410.  i =    43, P =     7.621, Xi = -1.011E-02, Xmax =  1417.  i =    44, P =     7.029, Xi = -1.096E-02, Xmax =  1426.  i =    45, P =     6.470, Xi = -1.182E-02, Xmax =  1432.  i =    46, P =     5.940, Xi = -1.268E-02, Xmax =  1440.  i =    47, P =     5.441, Xi = -1.367E-02, Xmax =  1449.  i =    48, P =     4.972, Xi = -1.457E-02, Xmax =  1457.  i =    49, P =     4.529, Xi = -1.522E-02, Xmax =  1463.  i =    50, P =     4.128, Xi = -1.670E-02, Xmax =  1475.  i =    51, P =     3.787, Xi = -1.865E-02, Xmax =  1487.  i =    52, P =     3.477, Xi = -1.997E-02, Xmax =  1497.  i =    53, P =     3.180, Xi = -2.076E-02, Xmax =  1504.  i =    54, P =     2.907, Xi = -2.158E-02, Xmax =  1510.  i =    55, P =     2.673, Xi = -2.314E-02, Xmax =  1521.  i =    56, P =     2.476, Xi = -2.380E-02, Xmax =  1526.  i =    57, P =     2.315, Xi = -2.434E-02, Xmax =  1531.  i =    58, P =     2.186, Xi = -2.459E-02, Xmax =  1533.  i =    59, P =     2.090, Xi = -2.482E-02, Xmax =  1535.  i =    60, P =     2.026, Xi = -2.503E-02, Xmax =  1536.  X = -1370.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1350.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1330.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1310.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1290.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1270.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1250.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1230.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1210.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1190.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1170.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1150.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1130.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1110.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1090.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1070.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1050.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1030.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X = -1010.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -990.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -970.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -950.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -930.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -910.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -890.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -870.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -850.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -830.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -810.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -790.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -770.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -750.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -730.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -710.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -690.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -670.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -650.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -630.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -610.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -590.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -570.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -550.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -530.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -510.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -490.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -470.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -450.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -430.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -410.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -390.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -370.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -350.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -330.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -310.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -290.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -270.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     2049:    8192  X =  -250.5, Xmax =  1536.5, DPh =  1.4, IR:NU =     2049:    8192  X =  -230.5, Xmax =  1536.5, DPh =  1.6, IR:NU =     2049:   16384  X =  -210.5, Xmax =  1536.5, DPh =  0.9, IR:NU =     4097:   16384  X =  -190.5, Xmax =  1536.5, DPh =  1.0, IR:NU =     4097:   16384  X =  -170.5, Xmax =  1536.5, DPh =  1.1, IR:NU =     4097:   16384  X =  -150.5, Xmax =  1536.5, DPh =  1.3, IR:NU =     4097:   16384  X =  -130.5, Xmax =  1536.5, DPh =  1.4, IR:NU =     4097:   16384  X =  -110.5, Xmax =  1536.5, DPh =  1.5, IR:NU =     4097:   16384  X =   -90.5, Xmax =  1536.5, DPh =  1.7, IR:NU =     4097:   32768  X =   -70.5, Xmax =  1536.5, DPh =  0.9, IR:NU =     8193:   32768  X =   -50.5, Xmax =  1536.5, DPh =  1.0, IR:NU =     8193:   32768  X =   -30.5, Xmax =  1536.5, DPh =  1.1, IR:NU =     8193:   32768  X =   -10.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     8193:   32768  X =     9.5, Xmax =  1536.5, DPh =  1.2, IR:NU =     8193:   32768  X =    29.5, Xmax =  1536.5, DPh =  1.3, IR:NU =     8193:   32768  X =    49.5, Xmax =  1536.5, DPh =  1.4, IR:NU =     8193:   32768  X =    69.5, Xmax =  1536.5, DPh =  1.5, IR:NU =     8193:   32768  X =    89.5, Xmax =  1536.5, DPh =  1.6, IR:NU =     8193:   32768  X =   109.5, Xmax =  1536.5, DPh =  1.7, IR:NU =     8193:   65536  X =   129.5, Xmax =  1536.5, DPh =  0.9, IR:NU =    16385:   65536  X =   149.5, Xmax =  1536.5, DPh =  0.9, IR:NU =    16385:   65536  X =   169.5, Xmax =  1536.5, DPh =  1.0, IR:NU =    16385:   65536  X =   189.5, Xmax =  1536.5, DPh =  1.2, IR:NU =    16385:   65536  X =   209.5, Xmax =  1536.5, DPh =  1.6, IR:NU =    16385:   65536  X =   229.5, Xmax =  1536.5, DPh =  2.9, IR:NU =    16385:   65536  X =   249.5, Xmax =  1536.5, DPh =  3.1, IR:NU =    16385:   65536  X =   269.5, Xmax =  1536.5, DPh =  3.1, IR:NU =    16385:   65536  X =   289.5, Xmax =  1536.5, DPh =  3.1, IR:NU =    16385:   65536  X =   309.5, Xmax =  1536.5, DPh =  3.1, IR:NU =    16385:   65536  X =   329.5, Xmax =  1536.5, DPh =  3.1, IR:NU =    16385:   65536  X =   349.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   369.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   389.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   409.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   429.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   449.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   469.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   489.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   509.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   529.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   549.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   569.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   589.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   609.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   629.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   649.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   669.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   689.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   709.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   729.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   749.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   769.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   789.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   809.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   829.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   849.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   869.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   889.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   909.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   929.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   949.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   969.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =   989.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =  1009.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =  1029.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =  1049.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =  1069.5, Xmax =  1536.5, DPh =  3.0, IR:NU =        1:   65536  X =  1089.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =  1109.5, Xmax =  1536.5, DPh =  3.1, IR:NU =        1:   65536  X =  1129.5, Xmax =  1536.5, DPh =  2.2, IR:NU =        1:   65536  X =  1149.5, Xmax =  1536.5, DPh =  2.1, IR:NU =        1:   65536  X =  1169.5, Xmax =  1536.5, DPh =  2.0, IR:NU =        1:   65536  X =  1189.5, Xmax =  1536.5, DPh =  2.0, IR:NU =        1:   65536  X =  1209.5, Xmax =  1536.5, DPh =  1.9, IR:NU =        1:   65536  X =  1229.5, Xmax =  1536.5, DPh =  1.9, IR:NU =        1:   65536  X =  1249.5, Xmax =  1536.5, DPh =  1.8, IR:NU =        1:   65536  X =  1269.5, Xmax =  1536.5, DPh =  1.8, IR:NU =        1:   65536  X =  1289.5, Xmax =  1536.5, DPh =  1.8, IR:NU =        1:   65536  X =  1309.5, Xmax =  1536.5, DPh =  1.7, IR:NU =        1:   65536  X =  1329.5, Xmax =  1536.5, DPh =  1.7, IR:NU =        1:   65536  X =  1349.5, Xmax =  1536.5, DPh =  1.7, IR:NU =        1:   65536  X =  1369.5, Xmax =  1536.5, DPh =  1.6, IR:NU =        1:   65536  X =  1389.5, Xmax =  1536.5, DPh =  1.6, IR:NU =        1:   65536  X =  1409.5, Xmax =  1536.5, DPh =  1.6, IR:NU =        1:   65536  X =  1429.5, Xmax =  1536.5, DPh =  1.6, IR:NU =        1:   65536  X =  1449.5, Xmax =  1536.5, DPh =  1.5, IR:NU =        1:   65536  X =  1469.5, Xmax =  1536.5, DPh =  1.5, IR:NU =        1:   65536  X =  1489.5, Xmax =  1536.5, DPh =  1.5, IR:NU =        1:   65536  X =  1509.5, Xmax =  1536.5, DPh =  1.5, IR:NU =        1:   65536  X =  1529.5, Xmax =  1536.5, DPh =  1.4, IR:NU =        1:   65536  X =  1549.5, Xmax =  1536.5, DPh =  1.4, IR:NU =        1:   65536 WCA,GOT= T T
+
+Wave. Version 10.7.220 (c) M. E. Gorbunov. 05 Nov 2009.
+Wave optics propagation simulator.
+
+Atm     = ncep     HG      = 3d       Hmax    =   60.0   Hmin    =    0.0
+Earth   = geoid    DYN     =  0.100   DX      =   20.0   XLS     =    0.0
+FZ      =   10.0   SR      =   50.0   SDim    =      2   HGO     =  120.0
+NGO     =    300   FWP     =   -1.0   Vrb     =      5
+opt_TS     = F  opt_LS     = F  opt_ECEF   = F  opt_WO     = T  opt_GO     = T
+opt_RH     = T  opt_AB     = F  opt_AS     = F  opt_FIO    = T
+Freq       =  1.5754  1.2276
+AFreq      =  1.5754  1.2276
+MSIS       = 
+Geoid_Path = 
+ WOP  WCA  WCE  CAU  GOP  GRP  XBP  GOZ  GON  GOT  MOT  MOQ  MON  MOA  MTR  MTD   NC
+   *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *     
+
+Reading occultation data from: 
+  RO_DATA/atmPhs_C006.2014.115.23.51.G19_2013.3520_nc
+  AtmPhs format.
+Number of dimensions:       1
+Number of variables:       25
+Number of attributes:      48
+Unlimited dimension ID:    -1
+---------------
+Dimension info:
+  1 Name:            time   Length:  4999
+---------------
+Variable info:
+Name:            time
+   XType:   double    
+   Dims:    time
+          units: s
+      long_name: Time since start of occultation
+    valid_range:  0.0000000E+00  2.4000000E+02
+     _FillValue: -9.9900000E+02
+Name:         caL1Snr
+   XType:   float     
+   Dims:    time
+          units: none
+      long_name: Signal to Noise Ratio on the L1 channel, CA code
+    valid_range:  0.0000000E+00  6.5535000E+04
+     _FillValue: -9.9900000E+02
+Name:          pL1Snr
+   XType:   float     
+   Dims:    time
+          units: none
+      long_name: Signal to Noise Ratio on the L1 channel, P code
+    valid_range:  0.0000000E+00  6.5535000E+04
+     _FillValue: -9.9900000E+02
+Name:          pL2Snr
+   XType:   float     
+   Dims:    time
+          units: none
+      long_name: Signal to Noise Ratio on the L2 channel, P code
+    valid_range:  0.0000000E+00  6.5535000E+04
+     _FillValue: -9.9900000E+02
+Name:            xLeo
+   XType:   double    
+   Dims:    time
+          units: km
+      long_name: LEO X position (ECI)
+    valid_range: -7.3780000E+03  7.3780000E+03
+     _FillValue: -9.9900000E+02
+Name:            yLeo
+   XType:   double    
+   Dims:    time
+          units: km
+      long_name: LEO Y position (ECI)
+    valid_range: -7.3780000E+03  7.3780000E+03
+     _FillValue: -9.9900000E+02
+Name:            zLeo
+   XType:   double    
+   Dims:    time
+          units: km
+      long_name: LEO Z position (ECI)
+    valid_range: -7.3780000E+03  7.3780000E+03
+     _FillValue: -9.9900000E+02
+Name:           xdLeo
+   XType:   double    
+   Dims:    time
+          units: km/s
+      long_name: LEO X velocity (ECI)
+    valid_range: -8.0000000E+00  8.0000000E+00
+     _FillValue: -9.9900000E+02
+Name:           ydLeo
+   XType:   double    
+   Dims:    time
+          units: km/s
+      long_name: LEO Y velocity (ECI)
+    valid_range: -8.0000000E+00  8.0000000E+00
+     _FillValue: -9.9900000E+02
+Name:           zdLeo
+   XType:   double    
+   Dims:    time
+          units: km/s
+      long_name: LEO Z velocity (ECI)
+    valid_range: -8.0000000E+00  8.0000000E+00
+     _FillValue: -9.9900000E+02
+Name:            xGps
+   XType:   double    
+   Dims:    time
+          units: km
+      long_name: GPS X position (ECI)
+    valid_range: -2.6564000E+04  2.6564000E+04
+     _FillValue: -9.9900000E+02
+Name:            yGps
+   XType:   double    
+   Dims:    time
+          units: km
+      long_name: GPS Y position (ECI)
+    valid_range: -2.6564000E+04  2.6564000E+04
+     _FillValue: -9.9900000E+02
+Name:            zGps
+   XType:   double    
+   Dims:    time
+          units: km
+      long_name: GPS Z position (ECI)
+    valid_range: -2.6564000E+04  2.6564000E+04
+     _FillValue: -9.9900000E+02
+Name:           xdGps
+   XType:   double    
+   Dims:    time
+          units: km/s
+      long_name: GPS X velocity (ECI)
+    valid_range: -5.0000000E+00  5.0000000E+00
+     _FillValue: -9.9900000E+02
+Name:           ydGps
+   XType:   double    
+   Dims:    time
+          units: km/s
+      long_name: GPS Y velocity (ECI)
+    valid_range: -5.0000000E+00  5.0000000E+00
+     _FillValue: -9.9900000E+02
+Name:           zdGps
+   XType:   double    
+   Dims:    time
+          units: km/s
+      long_name: GPS Z velocity (ECI)
+    valid_range: -5.0000000E+00  5.0000000E+00
+     _FillValue: -9.9900000E+02
+Name:            exL1
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: Excess Phase on L1 channel
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:            exL2
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: Excess Phase on L2 channel
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:            exLC
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: Excess Phase (ionosphere corrected)
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:            xmdl
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: OpenLoop Phase Model
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:          xmdldd
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: OpenLoop Phase Model (DD)
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:            xrng
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: OpenLoop Range Model
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:           xmdl2
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: L2CA OpenLoop Phase Model
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:         xmdldd2
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: L2CA OpenLoop Phase Model (DD)
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+Name:           xrng2
+   XType:   double    
+   Dims:    time
+          units: m
+      long_name: L2CA OpenLoop Range Model
+    valid_range: -5.0000000E+03  5.0000000E+03
+     _FillValue: -9.9900000E+02
+---------------
+Global attribute info:
+ processingType:        1
+processingHisto: GENPHS5 1.0
+timeOfProcessin: 20140914:160705.957:-0600
+        subType:     2013
+        version:     3520
+      missionId: COSMIC
+      trkStatus:        2
+          leoId:        6
+         dumpId:        1
+          occId:        1
+        setting:        0
+          conId:        1
+       refsatId:       26
+       occsatId:       19
+        ismtL4n:      100
+    iRefOutlier:        0
+     iRefOutEpo:        0
+        iHasGap:        0
+       FirstGap:  0.0000000E+00
+        iTotGap:        0
+       rmsGapL1:  0.0000000E+00
+       rmsGapL2:  0.0000000E+00
+        fidName:                 
+      startTime:  1.0825050E+09
+       stopTime:  1.0825051E+09
+           year:     2014
+          month:        4
+            day:       25
+           hour:       23
+         minute:       49
+         second:  1.7000000E+01
+      dayOfYear:      115
+         intref:        0
+        hrstato:    1
+        hrstatr:    0
+         refrms:  2.0212077E-03
+         refmax:  9.1887135E-03
+      fidoccrms:  0.0000000E+00
+      fidoccmax:  0.0000000E+00
+      fidrefrms:  0.0000000E+00
+      fidrefmax:  0.0000000E+00
+          l2min:  1.6600000E+02
+          l2max:  2.1800000E+02
+      fileStamp: C006.2014.115.23.51.G19
+      parmsfile: processOcc5.parms8
+         center: UCAR/CDAAC
+            bad: 0
+         errstr: OK
+   2 x   4999 data read.
+       0 navigation bits read.
+Reading NCEP fields from: 
+  NCEP_FNL1X1/fnl_20140426_00_00.grb
+  Lat1/2 =   90.000  -90.000
+  Lon1/2 =    0.000  359.000
+  Generating prescribed longitude grid.
+  Generating prescribed latitude grid.
+  Grid dimension:  360 x  181 x    1 x   26
+
+Wave propagation
+  Determination of shadow border.
+  XGPS = -25712.692
+
+  GO propagation.
+  NGO =    60
+
+  Ymin =   -40., Ymax =    71., Xmin = -1391.
+  NUmax =      65536
+  Multiple phase screens.
+
+  CT in last phase screen.
+  DP0  =   2.000
+  i =      1   Y =   -92.16   X =  3414.54  i =     61   Y =   -88.13   X =  3407.21  i =    121   Y =   -84.10   X =  3399.88  i =    181   Y =   -80.08   X =  3392.54  i =    241   Y =   -76.07   X =  3385.20  i =    301   Y =   -72.07   X =  3377.86  i =    361   Y =   -68.07   X =  3370.51  i =    421   Y =   -64.09   X =  3363.16  i =    481   Y =   -60.12   X =  3355.80  i =    541   Y =   -56.15   X =  3348.44  i =    601   Y =   -52.19   X =  3341.07  i =    661   Y =   -48.24   X =  3333.71  i =    721   Y =   -44.30   X =  3326.33  i =    781   Y =   -40.37   X =  3318.96  i =    841   Y =   -36.45   X =  3311.58  i =    901   Y =   -32.54   X =  3304.19  i =    961   Y =   -28.64   X =  3296.80  i =   1021   Y =   -24.74   X =  3289.41  i =   1081   Y =   -20.85   X =  3282.01  i =   1141   Y =   -16.98   X =  3274.61  i =   1201   Y =   -13.11   X =  3267.21  i =   1261   Y =    -9.25   X =  3259.80  i =   1321   Y =    -5.40   X =  3252.39  i =   1381   Y =    -1.56   X =  3244.97  i =   1441   Y =     2.28   X =  3237.55  i =   1501   Y =     6.10   X =  3230.13  i =   1561   Y =     9.91   X =  3222.70  i =   1621   Y =    13.72   X =  3215.27  i =   1681   Y =    17.52   X =  3207.83  i =   1741   Y =    21.30   X =  3200.39  i =   1801   Y =    25.08   X =  3192.95  i =   1861   Y =    28.85   X =  3185.50  i =   1921   Y =    32.61   X =  3178.05  i =   1981   Y =    36.37   X =  3170.60  i =   2041   Y =    40.11   X =  3163.14  i =   2101   Y =    43.84   X =  3155.68  i =   2161   Y =    47.57   X =  3148.21  i =   2221   Y =    51.28   X =  3140.74  i =   2281   Y =    54.99   X =  3133.27  i =   2341   Y =    58.69   X =  3125.79  i =   2401   Y =    62.38   X =  3118.31  i =   2461   Y =    66.06   X =  3110.83  i =   2521   Y =    69.73   X =  3103.34  i =      1   Y =   -92.16   X =  3414.54  i =     61   Y =   -88.13   X =  3407.21  i =    121   Y =   -84.10   X =  3399.88  i =    181   Y =   -80.08   X =  3392.54  i =    241   Y =   -76.07   X =  3385.20  i =    301   Y =   -72.07   X =  3377.86  i =    361   Y =   -68.07   X =  3370.51  i =    421   Y =   -64.09   X =  3363.16  i =    481   Y =   -60.12   X =  3355.80  i =    541   Y =   -56.15   X =  3348.44  i =    601   Y =   -52.19   X =  3341.07  i =    661   Y =   -48.24   X =  3333.71  i =    721   Y =   -44.30   X =  3326.33  i =    781   Y =   -40.37   X =  3318.96  i =    841   Y =   -36.45   X =  3311.58  i =    901   Y =   -32.54   X =  3304.19  i =    961   Y =   -28.64   X =  3296.80  i =   1021   Y =   -24.74   X =  3289.41  i =   1081   Y =   -20.85   X =  3282.01  i =   1141   Y =   -16.98   X =  3274.61  i =   1201   Y =   -13.11   X =  3267.21  i =   1261   Y =    -9.25   X =  3259.80  i =   1321   Y =    -5.40   X =  3252.39  i =   1381   Y =    -1.56   X =  3244.97  i =   1441   Y =     2.28   X =  3237.55  i =   1501   Y =     6.10   X =  3230.13  i =   1561   Y =     9.91   X =  3222.70  i =   1621   Y =    13.72   X =  3215.27  i =   1681   Y =    17.52   X =  3207.83  i =   1741   Y =    21.30   X =  3200.39  i =   1801   Y =    25.08   X =  3192.95  i =   1861   Y =    28.85   X =  3185.50  i =   1921   Y =    32.61   X =  3178.05  i =   1981   Y =    36.37   X =  3170.60  i =   2041   Y =    40.11   X =  3163.14  i =   2101   Y =    43.84   X =  3155.68  i =   2161   Y =    47.57   X =  3148.21  i =   2221   Y =    51.28   X =  3140.74  i =   2281   Y =    54.99   X =  3133.27  i =   2341   Y =    58.69   X =  3125.79  i =   2401   Y =    62.38   X =  3118.31  i =   2461   Y =    66.06   X =  3110.83  i =   2521   Y =    69.73   X =  3103.34  Y1 =    0.0000, Y2 =   20.0000, Stat = 1  Y1 =    0.0000, Y2 =   10.0000, Stat = 0  Y1 =    0.0000, Y2 =    5.0000, Stat = 0  Y1 =    0.0000, Y2 =    2.5000, Stat = 0  Y1 =    1.2500, Y2 =    2.5000, Stat = 1  Y1 =    1.8750, Y2 =    2.5000, Stat = 1  Y1 =    1.8750, Y2 =    2.1875, Stat = 0  Y1 =    1.8750, Y2 =    2.0312, Stat = 0  Y1 =    1.9531, Y2 =    2.0312, Stat = 1  Y1 =    1.9922, Y2 =    2.0312, Stat = 1  Y1 =    1.9922, Y2 =    2.0117, Stat = 0  Y1 =    2.0020, Y2 =    2.0117, Stat = 1  Y1 =    2.0068, Y2 =    2.0117, Stat = 1  Y1 =    2.0093, Y2 =    2.0117, Stat = 1  Y1 =    2.0093, Y2 =    2.0105, Stat = 0  Y1 =    2.0099, Y2 =    2.0105, Stat = 1  Y1 =   -8.9948, Y2 =    2.0105, Stat = 1  Y1 =   -3.4921, Y2 =    2.0105, Stat = 1  Y1 =   -0.7408, Y2 =    2.0105, Stat = 1  Y1 =    0.6348, Y2 =    2.0105, Stat = 1  Y1 =    1.3227, Y2 =    2.0105, Stat = 1  Y1 =    1.6666, Y2 =    2.0105, Stat = 1  Y1 =    1.8385, Y2 =    2.0105, Stat = 1  Y1 =    1.9245, Y2 =    2.0105, Stat = 1  Y1 =    1.9675, Y2 =    2.0105, Stat = 1  Y1 =    1.9890, Y2 =    2.0105, Stat = 1  Y1 =    1.9998, Y2 =    2.0105, Stat = 1  Y1 =    2.0051, Y2 =    2.0105, Stat = 1  Y1 =    2.0078, Y2 =    2.0105, Stat = 1  Y1 =    2.0092, Y2 =    2.0105, Stat = 1  Y1 =    2.0098, Y2 =    2.0105, Stat = 1  i =     1, P =   121.937, Eps =  2.14E-10  i =     2, P =   121.177, Eps =  2.36E-10  i =     3, P =   120.419, Eps =  2.62E-10  i =     4, P =   119.663, Eps =  2.91E-10  i =     5, P =   118.910, Eps =  3.24E-10  i =     6, P =   118.159, Eps =  3.62E-10  i =     7, P =   117.411, Eps =  4.05E-10  i =     8, P =   116.665, Eps =  4.54E-10  i =     9, P =   115.921, Eps =  5.11E-10  i =    10, P =   115.180, Eps =  5.76E-10  i =    11, P =   114.442, Eps =  6.51E-10  i =    12, P =   113.705, Eps =  7.38E-10  i =    13, P =   112.971, Eps =  8.38E-10  i =    14, P =   112.240, Eps =  9.55E-10  i =    15, P =   111.511, Eps =  1.09E-09  i =    16, P =   110.784, Eps =  1.24E-09  i =    17, P =   110.060, Eps =  1.42E-09  i =    18, P =   109.338, Eps =  1.63E-09  i =    19, P =   108.618, Eps =  1.87E-09  i =    20, P =   107.901, Eps =  2.15E-09  i =    21, P =   107.187, Eps =  2.47E-09  i =    22, P =   106.474, Eps =  2.84E-09  i =    23, P =   105.764, Eps =  3.26E-09  i =    24, P =   105.057, Eps =  3.76E-09  i =    25, P =   104.352, Eps =  4.32E-09  i =    26, P =   103.649, Eps =  4.97E-09  i =    27, P =   102.949, Eps =  5.71E-09  i =    28, P =   102.251, Eps =  6.56E-09  i =    29, P =   101.556, Eps =  7.52E-09  i =    30, P =   100.863, Eps =  8.62E-09  i =    31, P =   100.172, Eps =  9.87E-09  i =    32, P =    99.484, Eps =  1.13E-08  i =    33, P =    98.798, Eps =  1.29E-08  i =    34, P =    98.115, Eps =  1.47E-08  i =    35, P =    97.434, Eps =  1.67E-08  i =    36, P =    96.756, Eps =  1.90E-08  i =    37, P =    96.079, Eps =  2.16E-08  i =    38, P =    95.406, Eps =  2.45E-08  i =    39, P =    94.734, Eps =  2.77E-08  i =    40, P =    94.065, Eps =  3.13E-08  i =    41, P =    93.399, Eps =  3.52E-08  i =    42, P =    92.735, Eps =  3.97E-08  i =    43, P =    92.073, Eps =  4.46E-08  i =    44, P =    91.414, Eps =  5.00E-08  i =    45, P =    90.757, Eps =  5.60E-08  i =    46, P =    90.103, Eps =  6.26E-08  i =    47, P =    89.451, Eps =  6.99E-08  i =    48, P =    88.801, Eps =  7.80E-08  i =    49, P =    88.154, Eps =  8.69E-08  i =    50, P =    87.509, Eps =  9.66E-08  i =    51, P =    86.867, Eps =  1.07E-07  i =    52, P =    86.227, Eps =  1.19E-07  i =    53, P =    85.589, Eps =  1.32E-07  i =    54, P =    84.954, Eps =  1.46E-07  i =    55, P =    84.321, Eps =  1.62E-07  i =    56, P =    83.691, Eps =  1.79E-07  i =    57, P =    83.063, Eps =  1.97E-07  i =    58, P =    82.437, Eps =  2.18E-07  i =    59, P =    81.814, Eps =  2.40E-07  i =    60, P =    81.194, Eps =  2.64E-07  i =    61, P =    80.575, Eps =  2.90E-07  i =    62, P =    79.959, Eps =  3.19E-07  i =    63, P =    79.346, Eps =  3.50E-07  i =    64, P =    78.735, Eps =  3.84E-07  i =    65, P =    78.126, Eps =  4.21E-07  i =    66, P =    77.520, Eps =  4.61E-07  i =    67, P =    76.916, Eps =  5.04E-07  i =    68, P =    76.315, Eps =  5.51E-07  i =    69, P =    75.716, Eps =  6.01E-07  i =    70, P =    75.119, Eps =  6.55E-07  i =    71, P =    74.525, Eps =  7.14E-07  i =    72, P =    73.933, Eps =  7.77E-07  i =    73, P =    73.344, Eps =  8.45E-07  i =    74, P =    72.757, Eps =  9.18E-07  i =    75, P =    72.172, Eps =  9.97E-07  i =    76, P =    71.590, Eps =  1.08E-06  i =    77, P =    71.010, Eps =  1.17E-06  i =    78, P =    70.433, Eps =  1.27E-06  i =    79, P =    69.858, Eps =  1.37E-06  i =    80, P =    69.286, Eps =  1.49E-06  i =    81, P =    68.716, Eps =  1.61E-06  i =    82, P =    68.148, Eps =  1.74E-06  i =    83, P =    67.583, Eps =  1.88E-06  i =    84, P =    67.020, Eps =  2.02E-06  i =    85, P =    66.459, Eps =  2.18E-06  i =    86, P =    65.901, Eps =  2.35E-06  i =    87, P =    65.346, Eps =  2.54E-06  i =    88, P =    64.793, Eps =  2.73E-06  i =    89, P =    64.242, Eps =  2.94E-06  i =    90, P =    63.693, Eps =  3.16E-06  i =    91, P =    63.147, Eps =  3.40E-06  i =    92, P =    62.604, Eps =  3.65E-06  i =    93, P =    62.063, Eps =  3.92E-06  i =    94, P =    61.524, Eps =  4.21E-06  i =    95, P =    60.988, Eps =  4.51E-06  i =    96, P =    60.454, Eps =  4.83E-06  i =    97, P =    59.922, Eps =  5.17E-06  i =    98, P =    59.393, Eps =  5.53E-06  i =    99, P =    58.867, Eps =  5.90E-06  i =   100, P =    58.342, Eps =  6.30E-06  i =   101, P =    57.820, Eps =  6.72E-06  i =   102, P =    57.301, Eps =  7.15E-06  i =   103, P =    56.784, Eps =  7.61E-06  i =   104, P =    56.269, Eps =  8.09E-06  i =   105, P =    55.757, Eps =  8.60E-06  i =   106, P =    55.247, Eps =  9.12E-06  i =   107, P =    54.740, Eps =  9.67E-06  i =   108, P =    54.235, Eps =  1.02E-05  i =   109, P =    53.733, Eps =  1.08E-05  i =   110, P =    53.232, Eps =  1.14E-05  i =   111, P =    52.735, Eps =  1.21E-05  i =   112, P =    52.239, Eps =  1.28E-05  i =   113, P =    51.746, Eps =  1.35E-05  i =   114, P =    51.256, Eps =  1.43E-05  i =   115, P =    50.768, Eps =  1.51E-05  i =   116, P =    50.282, Eps =  1.60E-05  i =   117, P =    49.799, Eps =  1.69E-05  i =   118, P =    49.318, Eps =  1.79E-05  i =   119, P =    48.840, Eps =  1.89E-05  i =   120, P =    48.364, Eps =  2.01E-05  i =   121, P =    47.890, Eps =  2.13E-05  i =   122, P =    47.419, Eps =  2.26E-05  i =   123, P =    46.950, Eps =  2.40E-05  i =   124, P =    46.484, Eps =  2.55E-05  i =   125, P =    46.020, Eps =  2.71E-05  i =   126, P =    45.558, Eps =  2.88E-05  i =   127, P =    45.099, Eps =  3.06E-05  i =   128, P =    44.642, Eps =  3.26E-05  i =   129, P =    44.188, Eps =  3.48E-05  i =   130, P =    43.736, Eps =  3.71E-05  i =   131, P =    43.287, Eps =  3.96E-05  i =   132, P =    42.840, Eps =  4.23E-05  i =   133, P =    42.395, Eps =  4.52E-05  i =   134, P =    41.953, Eps =  4.83E-05  i =   135, P =    41.513, Eps =  5.17E-05  i =   136, P =    41.076, Eps =  5.54E-05  i =   137, P =    40.641, Eps =  5.93E-05  i =   138, P =    40.208, Eps =  6.34E-05  i =   139, P =    39.778, Eps =  6.79E-05  i =   140, P =    39.350, Eps =  7.27E-05  i =   141, P =    38.925, Eps =  7.78E-05  i =   142, P =    38.502, Eps =  8.33E-05  i =   143, P =    38.081, Eps =  8.91E-05  i =   144, P =    37.663, Eps =  9.53E-05  i =   145, P =    37.248, Eps =  1.02E-04  i =   146, P =    36.834, Eps =  1.09E-04  i =   147, P =    36.423, Eps =  1.16E-04  i =   148, P =    36.015, Eps =  1.24E-04  i =   149, P =    35.609, Eps =  1.33E-04  i =   150, P =    35.205, Eps =  1.42E-04  i =   151, P =    34.804, Eps =  1.51E-04  i =   152, P =    34.405, Eps =  1.61E-04  i =   153, P =    34.009, Eps =  1.72E-04  i =   154, P =    33.615, Eps =  1.83E-04  i =   155, P =    33.224, Eps =  1.95E-04  i =   156, P =    32.834, Eps =  2.08E-04  i =   157, P =    32.448, Eps =  2.21E-04  i =   158, P =    32.063, Eps =  2.35E-04  i =   159, P =    31.681, Eps =  2.50E-04  i =   160, P =    31.302, Eps =  2.65E-04  i =   161, P =    30.925, Eps =  2.82E-04  i =   162, P =    30.550, Eps =  2.99E-04  i =   163, P =    30.178, Eps =  3.17E-04  i =   164, P =    29.808, Eps =  3.36E-04  i =   165, P =    29.441, Eps =  3.56E-04  i =   166, P =    29.076, Eps =  3.77E-04  i =   167, P =    28.713, Eps =  3.99E-04  i =   168, P =    28.353, Eps =  4.22E-04  i =   169, P =    27.995, Eps =  4.47E-04  i =   170, P =    27.640, Eps =  4.72E-04  i =   171, P =    27.287, Eps =  4.99E-04  i =   172, P =    26.937, Eps =  5.26E-04  i =   173, P =    26.588, Eps =  5.55E-04  i =   174, P =    26.243, Eps =  5.86E-04  i =   175, P =    25.900, Eps =  6.18E-04  i =   176, P =    25.559, Eps =  6.51E-04  i =   177, P =    25.220, Eps =  6.85E-04  i =   178, P =    24.884, Eps =  7.21E-04  i =   179, P =    24.551, Eps =  7.57E-04  i =   180, P =    24.220, Eps =  7.95E-04  i =   181, P =    23.891, Eps =  8.35E-04  i =   182, P =    23.565, Eps =  8.75E-04  i =   183, P =    23.241, Eps =  9.17E-04  i =   184, P =    22.919, Eps =  9.61E-04  i =   185, P =    22.600, Eps =  1.01E-03  i =   186, P =    22.284, Eps =  1.06E-03  i =   187, P =    21.969, Eps =  1.11E-03  i =   188, P =    21.658, Eps =  1.16E-03  i =   189, P =    21.348, Eps =  1.21E-03  i =   190, P =    21.041, Eps =  1.27E-03  i =   191, P =    20.737, Eps =  1.33E-03  i =   192, P =    20.435, Eps =  1.40E-03  i =   193, P =    20.135, Eps =  1.47E-03  i =   194, P =    19.838, Eps =  1.54E-03  i =   195, P =    19.543, Eps =  1.62E-03  i =   196, P =    19.250, Eps =  1.69E-03  i =   197, P =    18.960, Eps =  1.77E-03  i =   198, P =    18.673, Eps =  1.86E-03  i =   199, P =    18.388, Eps =  1.94E-03  i =   200, P =    18.105, Eps =  2.03E-03  i =   201, P =    17.825, Eps =  2.13E-03  i =   202, P =    17.547, Eps =  2.22E-03  i =   203, P =    17.272, Eps =  2.32E-03  i =   204, P =    16.999, Eps =  2.42E-03  i =   205, P =    16.728, Eps =  2.53E-03  i =   206, P =    16.460, Eps =  2.64E-03  i =   207, P =    16.194, Eps =  2.75E-03  i =   208, P =    15.930, Eps =  2.87E-03  i =   209, P =    15.669, Eps =  2.99E-03  i =   210, P =    15.410, Eps =  3.11E-03  i =   211, P =    15.154, Eps =  3.24E-03  i =   212, P =    14.900, Eps =  3.37E-03  i =   213, P =    14.649, Eps =  3.51E-03  i =   214, P =    14.400, Eps =  3.66E-03  i =   215, P =    14.153, Eps =  3.81E-03  i =   216, P =    13.909, Eps =  3.97E-03  i =   217, P =    13.667, Eps =  4.13E-03  i =   218, P =    13.427, Eps =  4.30E-03  i =   219, P =    13.191, Eps =  4.47E-03  i =   220, P =    12.956, Eps =  4.66E-03  i =   221, P =    12.725, Eps =  4.84E-03  i =   222, P =    12.495, Eps =  5.04E-03  i =   223, P =    12.269, Eps =  5.25E-03  i =   224, P =    12.044, Eps =  5.46E-03  i =   225, P =    11.823, Eps =  5.68E-03  i =   226, P =    11.603, Eps =  5.91E-03  i =   227, P =    11.387, Eps =  6.16E-03  i =   228, P =    11.172, Eps =  6.41E-03  i =   229, P =    10.960, Eps =  6.68E-03  i =   230, P =    10.751, Eps =  6.97E-03  i =   231, P =    10.544, Eps =  7.28E-03  i =   232, P =    10.339, Eps =  7.60E-03  i =   233, P =    10.137, Eps =  7.92E-03  i =   234, P =     9.937, Eps =  8.23E-03  i =   235, P =     9.739, Eps =  8.51E-03  i =   236, P =     9.543, Eps =  8.75E-03  i =   237, P =     9.350, Eps =  8.96E-03  i =   238, P =     9.159, Eps =  9.13E-03  i =   239, P =     8.970, Eps =  9.28E-03  i =   240, P =     8.783, Eps =  9.42E-03  i =   241, P =     8.599, Eps =  9.54E-03  i =   242, P =     8.417, Eps =  9.66E-03  i =   243, P =     8.238, Eps =  9.79E-03  i =   244, P =     8.061, Eps =  9.93E-03  i =   245, P =     7.887, Eps =  1.01E-02  i =   246, P =     7.715, Eps =  1.03E-02  i =   247, P =     7.545, Eps =  1.05E-02  i =   248, P =     7.377, Eps =  1.07E-02  i =   249, P =     7.212, Eps =  1.10E-02  i =   250, P =     7.050, Eps =  1.12E-02  i =   251, P =     6.890, Eps =  1.14E-02  i =   252, P =     6.733, Eps =  1.17E-02  i =   253, P =     6.578, Eps =  1.19E-02  i =   254, P =     6.425, Eps =  1.21E-02  i =   255, P =     6.274, Eps =  1.24E-02  i =   256, P =     6.126, Eps =  1.26E-02  i =   257, P =     5.979, Eps =  1.28E-02  i =   258, P =     5.834, Eps =  1.31E-02  i =   259, P =     5.692, Eps =  1.34E-02  i =   260, P =     5.552, Eps =  1.37E-02  i =   261, P =     5.415, Eps =  1.39E-02  i =   262, P =     5.280, Eps =  1.42E-02  i =   263, P =     5.147, Eps =  1.45E-02  i =   264, P =     5.016, Eps =  1.47E-02  i =   265, P =     4.886, Eps =  1.49E-02  i =   266, P =     4.759, Eps =  1.51E-02  i =   267, P =     4.633, Eps =  1.52E-02  i =   268, P =     4.509, Eps =  1.54E-02  i =   269, P =     4.389, Eps =  1.57E-02  i =   270, P =     4.273, Eps =  1.62E-02  i =   271, P =     4.162, Eps =  1.67E-02  i =   272, P =     4.056, Eps =  1.73E-02  i =   273, P =     3.955, Eps =  1.79E-02  i =   274, P =     3.858, Eps =  1.84E-02  i =   275, P =     3.764, Eps =  1.89E-02  i =   276, P =     3.671, Eps =  1.94E-02  i =   277, P =     3.580, Eps =  1.98E-02  i =   278, P =     3.490, Eps =  2.01E-02  i =   279, P =     3.400, Eps =  2.03E-02  i =   280, P =     3.310, Eps =  2.06E-02  i =   281, P =     3.222, Eps =  2.08E-02  i =   282, P =     3.134, Eps =  2.10E-02  i =   283, P =     3.049, Eps =  2.12E-02  i =   284, P =     2.966, Eps =  2.15E-02  i =   285, P =     2.886, Eps =  2.18E-02  i =   286, P =     2.809, Eps =  2.22E-02  i =   287, P =     2.736, Eps =  2.27E-02  i =   288, P =     2.665, Eps =  2.33E-02  i =   289, P =     2.597, Eps =  2.37E-02  i =   290, P =     2.532, Eps =  2.38E-02  i =   291, P =     2.470, Eps =  2.39E-02  i =   292, P =     2.411, Eps =  2.41E-02  i =   293, P =     2.354, Eps =  2.43E-02  i =   294, P =     2.300, Eps =  2.45E-02  i =   295, P =     2.248, Eps =  2.46E-02  i =   296, P =     2.199, Eps =  2.47E-02  i =   297, P =     2.152, Eps =  2.47E-02  i =   298, P =     2.108, Eps =  2.49E-02  i =   299, P =     2.066, Eps =  2.50E-02  i =   300, P =     2.026, Eps =  2.51E-02  i =     1, P =     2.026, Eps =  2.39E-02  i =     2, P =     2.015, Eps =  2.02E-02  i =     3, P =     2.004, Eps =  1.84E-02  i =     4, P =     1.993, Eps =  1.69E-02  i =     5, P =     1.982, Eps =  1.57E-02  i =     6, P =     1.971, Eps =  1.46E-02  i =     7, P =     1.961, Eps =  1.36E-02  i =     8, P =     1.950, Eps =  1.27E-02  i =     9, P =     1.940, Eps =  1.19E-02  i =    10, P =     1.930, Eps =  1.11E-02  i =    11, P =     1.919, Eps =  1.04E-02  i =    12, P =     1.909, Eps =  9.67E-03  i =    13, P =     1.899, Eps =  9.00E-03  i =    14, P =     1.888, Eps =  8.36E-03  i =    15, P =     1.877, Eps =  7.74E-03  i =    16, P =     1.866, Eps =  7.15E-03  i =    17, P =     1.855, Eps =  6.57E-03  i =    18, P =     1.844, Eps =  6.01E-03  i =    19, P =     1.833, Eps =  5.47E-03  i =    20, P =     1.822, Eps =  4.95E-03  DP = -3.949E-02  DP0  =   1.993
+  Pmin =   2.000
+  Propagation to LEO orbit.
+  DYF = 0.00293   DYL = 0.00170
+  Channel 1  NH =   65536
+  Hmin/max = -0.02503  0.00253  HL = -0.02120
+  YSLmin/max =  -36.187   66.296
+  TU/TL =    0.219    0.724
+  Number of output data:   2526
+  Grid skips =    12     3
+
+  Channel 2  NH =   65536
+  Hmin/max = -0.02503  0.00255  HL = -0.02145
+  YSLmin/max =  -36.281   66.298
+  Grid skips =    12     3
+
+WOP elapsed time: 00:00:00:14
+Writing simulated RO data in LEOLEO format to: 
+  wop_output
+GO propagation
+  Determination of shadow border.
+
+  Determination of non-trapped reflection.
+
+  Direct rays.
+
+  Reflected rays.
+
+GO elapsed time: 00:00:00:05
+GO inversion
+  Elimination of ambiguities
+
+  Inversion
+  RF    =  0.9818
+ opts%ngo=         300
+
+*** Elapsed time: 00:00:00:24
+

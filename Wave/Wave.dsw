@@ -1,0 +1,212 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ECHAM"=..\ECHAM\ECHAM.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FFTW"=..\FFTW\fftw.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GCM"=..\GCM\GCM.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GRIB"=..\Grib\GRIB.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ICO"=..\ICO\ICO.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib"=..\Lib\Lib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Models"=..\Models\Models.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "NCEP"=..\NCEP\NCEP.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Phantom"=..\Phantom\Phantom.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Wave"=.\Wave.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name occlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ECHAM
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MSIS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GRIB
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Phantom
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name fftw
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Wavelib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ICO
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Models
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name netcdf
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name NCEP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GCM
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Wavelib"=..\Wavelib\Wavelib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "netcdf"=..\netcdf\netcdf.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "occlib"=..\occlib\occlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
